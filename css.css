@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+ul, li{
+    text-decoration: none;
+    color: white;
+}
+.Logo{
+    padding-left: 15%;
+    width: 80%;
+}
+#brandLogo{
+    z-index: 10;
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    top: 5px;
+}
+#contQuienesSomos , #contServicios{
+    padding-top: 10%;
+}
+
