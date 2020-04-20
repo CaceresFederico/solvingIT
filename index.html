@@ -26,16 +26,10 @@
                 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link " href="#contNosotros">Nosotros</a>
+                            <a class="nav-link" href="index.html">Nosotros</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                aria-haspopup="true" aria-expanded="false">Servicios</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#clientes">Clientes</a>
@@ -49,9 +43,9 @@
         </div>
     </header>
 
-    <!-- Section 1 -->
+    <!-- SECTION NOSOTROS -->
     <section class="container-fluid p-0">
-        <div class="container vh-100" id="contNosotros">
+        <div class="container vh-100" id="contQuienesSomos">
             <div class="row">
                 <div class="col-6 p-0">
                     <div id="carouselExampleSlidesOnly" class="carousel slide pt-2" data-ride="carousel">
@@ -68,9 +62,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 h-50" id="nosotros">
-                    <h2 class="text-right text-white pt-2 pr-2">¿Quienes somos?</h2>
-                    <p class="pl-4 pr-4 text-center">Somos una empresa joven argentina fundada en 2005 por nuestro
+                <div class="col-6 h-50" id="divQuienesSomos">
+                    <h2 class="text-center text-white py-2">¿Quienes somos?</h2>
+                    <p class="pl-4 pr-4 text-center text-white">Somos una empresa joven argentina fundada en 2005 por nuestro
                         director
                         ejecutivo Sam Dovic, inicialmente
                         con unos pocos directivos y un grupo reducido de técnicos logramos mantener un ritmo de
@@ -86,8 +80,9 @@
                 </div>
             </div>
         </div>
+
         <!-- ACERCA DE NOSOTROS -->
-        <div class="container">
+        <div class="container ">
             <div class="jumbotron jumbotron-fluid w-75">
                 <div class="container">
                     <h2 class="display-5 text-center">Nosotros</h2>
@@ -109,7 +104,7 @@
 
                 <div class="container">
                     <ul>
-                        <h2 class="display-5 pb-3">Algunos de nuestros objetivos:</h2>
+                        <h2 class="display-5 py-3">Algunos de nuestros objetivos:</h2>
                         <li>Lograr ampliar las especialidades de nuestros servicios lo cual facilita la búsqueda a
                             nuestros clientes.</li>
                         <li>Lograr escalar nuestra infraestructura un 20% a 2 años.</li>
@@ -120,18 +115,58 @@
                 </div>
             </div>
         </div>
-        <!-- CONTACTO -->
+
+        <!-- SECCION EMPLEADOS -->
+        <div class="container-fluid empleados">
+            <div class="row justify-content-center">
+                <div class="cardEmpleados">
+                    <img src="img/hombre.svg" class="card-img-top mr-auto" alt="User avatar">
+                    <div class="card-body">
+                        <p class="card-text">Cáceres Federico <br>Lider de desarollo Ssr.</p>
+                    </div>
+                </div>
+
+                <div class="cardEmpleados">
+                    <img src="img/hombre.svg" class="card-img-top" alt="User avatar">
+                    <div class="card-body">
+                        <p class="card-text">Bermudez Santiago<br>Lider de Testing QA Ssr.</p>
+                    </div>
+                </div>
+
+                <div class="cardEmpleados">
+                    <img src="img/hombre.svg" class="card-img-top" alt="User avatar">
+                    <div class="card-body">
+                        <p class="card-text">Crespo Rudy<br>Lider de RRHH Sr.</p>
+                    </div>
+                </div>
+
+                <div class="cardEmpleados">
+                    <img src="img/hombre.svg" class="card-img-top" alt="User avatar">
+                    <div class="card-body">
+                        <p class="card-text">Encinas Marcos<br>Director de proyectos Ssr.</p>
+                    </div>
+                </div>
+
+                <div class="cardEmpleados">
+                    <img src="img/hombre.svg" class="card-img-top" alt="User avatar">
+                    <div class="card-body">
+                        <p class="card-text">Pelliza Nicolas<br>Analista Big data Sr.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCION CONTACTO  -->
         <div class="container-fluid p-0" id="divContacto">
             <div class="row justify-content-center primeraRow">
-                <div class="textoContacto">¿Estas listo para comenzar con nosotros?</div> 
+                <div class="textoContacto">¿Estas listo para comenzar con nosotros?</div>
             </div>
             <div class="row justify-content-center segundaRow">
                 <button type="button" class="btn btn-primary">Contacto</button>
             </div>
         </div>
-
     </section>
-
+    <footer class="footer bg-dark text-center text-white"><small>Derechos Reservados 2020 SolvingIT diseñado por Cáceres Federico</small></footer>
     <!-- Section 2 -->
     <!-- <section class="container-fluid bg-info">
         <div class="container" id="contServicios">

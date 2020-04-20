@@ -34,34 +34,50 @@ ul li a:hover{
     height: 100px;
     top: 5px;
 }
-#contNosotros{
+#contQuienesSomos{
     padding-top: 10%;
     padding-right: 0px;
     padding-left: 0px;
 }
-#nosotros{
-    margin-top: 4.5%;
+#divQuienesSomos{
+    margin-top: 4%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #3969FF;
+    background-color: #383838;
 }
 .row{
     border-radius: 5px;
 }
 .jumbotron-fluid{
+    margin-top: 10%;
     border-radius: 5px;
     margin: auto;
 }
+.empleados{
+    margin-top: 10%;
+    background-color: #FFBD41;
+}
+.cardEmpleados{
+    width: 15%;
+    background-color: #FFBD41;
+}
 .card{
+    background-color: #FFBD41;
     margin: auto;
     width: 20%;
     border-radius: 20px;
     margin-bottom: 5%;
 }
 .card-img-top{
-    width: 100px;
-    margin: auto;
+    width: 150px;
+    padding-left: 26.5%;
     padding-top: 20px;
 }
+.card-text{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
 #divContacto{
     background-image: url(img/comienza.jpg);
     background-repeat:no-repeat;
@@ -70,13 +86,30 @@ ul li a:hover{
 }
 .primeraRow{
     padding-top: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
 .segundaRow{
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 .textoContacto{
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.footer{
+    padding-top: 30px;
+    height: 60px;
+}
+/* SERVICIOS */
+#contServicios{
+    margin-top: 10%;
+}
+#contServicios .card-text{
+    font-size: 20px;
     font-weight: bold;
     color: black;
+}
+#contServicios .card-img-top{
+  padding-left: 33%;
+  
 }
