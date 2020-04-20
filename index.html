@@ -8,6 +8,9 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css.css">
 </head>
@@ -19,58 +22,209 @@
                 <a href="index.html"><img src="img/logoRecortado.png" id="brandLogo" alt="Solving IT Brand"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link text-white " href="#contQuienesSomos">¿Quienes somos? </a>
+                            <a class="nav-link " href="#contNosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Servicios</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#contServicios">Servicios</a>
+                            <a class="nav-link" href="#clientes">Clientes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#clientes">Clientes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#contacto">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
+
     <!-- Section 1 -->
-    <section class="container-fluid vh-100">
-        <div class="container" id="contQuienesSomos">
-            <div class="row bg-primary">
-                <div class="col-6">
-                    <img src="img/logo_transparent.png" class="img-fluid mx-auto Logo" alt="Solving IT Logo">
+    <section class="container-fluid p-0">
+        <div class="container vh-100" id="contNosotros">
+            <div class="row">
+                <div class="col-6 p-0">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide pt-2" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/workingPeople1.jpg" class="d-block w-100 Logo" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/workingPeople2.jpg" class="d-block w-100 Logo" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/workingPeople3.jpg" class="d-block w-100 Logo" alt="...">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 pt-5">
-                    <h3 class="text-right pr-4">¿Quienes somos?</h3>
-                    <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi odit harum
-                        maxime
-                        possimus
-                        culpa officiis sequi voluptatibus rem, cumque maiores eos doloribus, sapiente quam
-                        architecto
-                        optio praesentium! Dolore distinctio fuga quas amet harum veritatis officiis aliquid magnam
-                        quos, nesciunt non necessitatibus soluta saepe illum omnis at animi quaerat quod quia.</p>
+                <div class="col-6 h-50" id="nosotros">
+                    <h2 class="text-right text-white pt-2 pr-2">¿Quienes somos?</h2>
+                    <p class="pl-4 pr-4 text-center">Somos una empresa joven argentina fundada en 2005 por nuestro
+                        director
+                        ejecutivo Sam Dovic, inicialmente
+                        con unos pocos directivos y un grupo reducido de técnicos logramos mantener un ritmo de
+                        crecimiento y
+                        aprendizaje constante gracias a nuestra metodología ágil de trabajo y la implementación de la
+                        mejora
+                        continua como cultura de trabajo. Actualmente contamos con 15 años de trayectoria en proyectos
+                        locales
+                        e internacionales y con el respaldo de miles de profesionales dispuestos a promover la mejor
+                        solución
+                        que le otorguen los mayores beneficios a nuestros clientes.
+                    </p>
                 </div>
             </div>
         </div>
+        <!-- ACERCA DE NOSOTROS -->
+        <div class="container">
+            <div class="jumbotron jumbotron-fluid w-75">
+                <div class="container">
+                    <h2 class="display-5 text-center">Nosotros</h2>
+                    <p class="font-italic text-center py-3">Nuestra misión en Solving IT es brindar soluciones y
+                        consultoría a organizaciones de alto
+                        rendimiento dentro del área IT ,tanto locales como internacionales, acompañados por nuestros
+                        ideales y cultura de trabajo adoptados, los cuales son sinónimo de confianza y forman parte de
+                        nuestro sello distintivo.</p>
+                    <hr class="my-4">
+                </div>
+
+                <div class="container">
+                    <p class="font-italic text-center py-3">La visión que concebimos se traduce como la aspiración de
+                        proveer el mejor nivel de atención,
+                        satisfacción y desempeño con nuestros clientes, actuando con la mayor profesionalidad posible
+                        para posicionarnos como un referente en nuestro campo.</p>
+                    <hr class="my-4">
+                </div>
+
+                <div class="container">
+                    <ul>
+                        <h2 class="display-5 pb-3">Algunos de nuestros objetivos:</h2>
+                        <li>Lograr ampliar las especialidades de nuestros servicios lo cual facilita la búsqueda a
+                            nuestros clientes.</li>
+                        <li>Lograr escalar nuestra infraestructura un 20% a 2 años.</li>
+                        <li>Aumentar nuestro índice de capacitaciones internas un 15% a 2 años.</li>
+                        <li>Aumentar nuestra cartera de clientes un 25% a 3 años.</li>
+                        <li>Bajar el gasto interno un 15% a 1 año.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- CONTACTO -->
+        <div class="container-fluid p-0" id="divContacto">
+            <div class="row justify-content-center primeraRow">
+                <div class="textoContacto">¿Estas listo para comenzar con nosotros?</div> 
+            </div>
+            <div class="row justify-content-center segundaRow">
+                <button type="button" class="btn btn-primary">Contacto</button>
+            </div>
+        </div>
+
     </section>
 
     <!-- Section 2 -->
-    <section class="container-fluid vh-100 bg-info">
+    <!-- <section class="container-fluid bg-info">
         <div class="container" id="contServicios">
             <div class="row bg-primary">
-                <div class="col-6 pt-5">
-                    
+                <div class="col pt-5">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container-fluid">
+                                    <div class="row">
+
+                                        <div class="card">
+                                            <img src="img/clientes/adobe.svg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <img src="img/clientes/facebook.svg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <img src="img/clientes/google.svg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="row">
+
+                                        <div class="card">
+                                            <img src="img/clientes/microsoft.svg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <img src="img/clientes/samsung.svg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <img src="img/clientes/volkswagen.svg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make
+                                                    up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

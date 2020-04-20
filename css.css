@@ -1,15 +1,31 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: #7000FF;
+}
+h2{
+    font-family: 'Sarala', sans-serif;
+}
+p{
+    font-size: 1.1em;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 ul, li{
-    text-decoration: none;
+    padding-right: 20px;
+}
+ul li a{
     color: white;
 }
+ul li a:hover{
+    color: #3969FF;
+}
 .Logo{
-    padding-left: 15%;
-    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    width: 100%;
 }
 #brandLogo{
     z-index: 10;
@@ -18,7 +34,49 @@ ul, li{
     height: 100px;
     top: 5px;
 }
-#contQuienesSomos , #contServicios{
+#contNosotros{
     padding-top: 10%;
+    padding-right: 0px;
+    padding-left: 0px;
 }
-
+#nosotros{
+    margin-top: 4.5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #3969FF;
+}
+.row{
+    border-radius: 5px;
+}
+.jumbotron-fluid{
+    border-radius: 5px;
+    margin: auto;
+}
+.card{
+    margin: auto;
+    width: 20%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+}
+.card-img-top{
+    width: 100px;
+    margin: auto;
+    padding-top: 20px;
+}
+#divContacto{
+    background-image: url(img/comienza.jpg);
+    background-repeat:no-repeat;
+    margin-top: 10%;
+    background-size: cover;
+}
+.primeraRow{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.segundaRow{
+    padding-bottom: 10%;
+}
+.textoContacto{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
