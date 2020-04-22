@@ -3,7 +3,8 @@ body ,html{
     left: 0;
     width: 100%;
     font-family: 'Hind Siliguri', sans-serif;
-    background-color: #7000FF;
+    background-color: #563d7c;
+    /* background-color: #7000FF; */
 }
 p{
     font-size: 1em;
@@ -33,6 +34,7 @@ ul li a:hover{
     height: 100px;
     top: 5px;
 }
+
 #contQuienesSomos{
     padding-top: 10%;
     padding-right: 0px;
@@ -93,6 +95,7 @@ ul li a:hover{
     background-image: url(img/comienza.jpg);
     margin-top: 10%;
     background-size: cover;
+    margin-bottom: 10%;
 }
 .primeraRow{
     padding-top: 10%;
@@ -103,7 +106,6 @@ ul li a:hover{
 }
 .textoContacto{
     text-align: center;
-    background-color: #FFBD41 ;
     width: 100%;
     font-size: 50px;
     font-weight: bold;
@@ -145,6 +147,7 @@ ul li a:hover{
     padding-top: 6%;
     padding-right: 2%;
     float: right;
+    color: white;
 }
 .textoCentro2{
     font-size: 2em;
@@ -171,5 +174,25 @@ ul li a:hover{
     margin-top: 15%;
     margin-bottom: 15%;
 }
+/* CONTACTO */
+.contactoImg{
+    height: 100%;
+}
+#contContacto{
+  margin-top: 6%;
+}
+.formularioP{
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.form-control{
 
-
+    width: 70%;
+}
+textarea{
+    width: 70%;
+}
+.btnEnviar{
+    width: 70%;
+}
