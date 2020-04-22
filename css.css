@@ -5,13 +5,12 @@ body ,html{
     font-family: 'Hind Siliguri', sans-serif;
     background-color: #7000FF;
 }
-
-    /* font-family: 'Sarala', sans-serif; */
 p{
     font-size: 1em;
     padding-right: 10px;
     padding-left: 10px;
 }
+/* HEADER */
 ul, li{
     padding-right: 20px;
 }
@@ -21,7 +20,7 @@ ul li a{
 ul li a:hover{
     color: #3969FF;
 }
-.Logo{
+.workingPeople{
     margin: 0px;
     padding: 0px;
     border-radius: 10px;
@@ -47,11 +46,27 @@ ul li a:hover{
 .row{
     border-radius: 5px;
 }
+/* CARDS */
+.card-img-top{
+    width: 200px;
+    height: 120px;
+}
+.card-text{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+
+/* ACERCA DE NOSOTROS */
+.acercaNosotros{
+    margin-top: 5%;
+}
 .jumbotron-fluid{
-    margin-top: 10%;
     border-radius: 5px;
     margin: auto;
 }
+/* EMPLEADOS */
 .empleados{
     margin-top: 10%;
     background-color: #FFBD41;
@@ -72,11 +87,8 @@ ul li a:hover{
     padding-left: 26.5%;
     padding-top: 20px;
 }
-.card-text{
-    font-size: 16px;
-    color: white;
-    text-align: center;
-}
+
+/* DIV CONTACTO */
 #divContacto{
     background-image: url(img/comienza.jpg);
     margin-top: 10%;
@@ -90,37 +102,74 @@ ul li a:hover{
     padding-bottom: 5%;
 }
 .textoContacto{
+    text-align: center;
+    background-color: #FFBD41 ;
+    width: 100%;
     font-size: 50px;
     font-weight: bold;
     color: white;
 }
+/* FOOTER */
 .footer{
-    padding-top: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #383838;
+    padding-top: 8px;
     height: 40px;
 }
-/* SERVICIOS */
+/* PAGINA DE SERVICIOS */
 #contServicios{
-    margin-top: 10%;
+    margin-top: 15%;
+}
+#contServicios .list-group-item a:hover{
+    background-color: blue;
 }
 .imgServicios1{
-    width: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    float: left;
+    padding-left: 3%;
+    width: 15%;
 }
 .imgServicios2{
-    width: 8%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    float: right;
+    padding-right: 3%;
+    width: 15%;
 }
-#contServicios li{
-    text-align: center;
+.textoCentro1{
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 6%;
+    padding-right: 2%;
+    float: right;
 }
-#contServicios .card-img-top{
- width: 200px;
- height: 120px;
+.textoCentro2{
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 6%;
+    padding-left: 2%;
+    float: left;
+}
+.cardServicios{
+    margin: auto;
 }
 #contServicios .card-text{
     font-size: 20px;
     font-weight: bold;
     color: black;
 }
-#contServicios .cardServicios{
-    margin: auto;
+/* TECNOLOGIAS */
+#contTecnologia{
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
+/* CLIENTES */
+#contClientes{
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
 
