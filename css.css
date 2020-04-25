@@ -1,10 +1,9 @@
-body ,html{
-    margin: 0;
-    left: 0;
+body{
     width: 100%;
+    margin: 0 auto;
+    padding: 0;
     font-family: 'Hind Siliguri', sans-serif;
     background-color: #563d7c;
-    /* background-color: #7000FF; */
 }
 p{
     font-size: 1em;
@@ -12,19 +11,20 @@ p{
     padding-left: 10px;
 }
 /* HEADER */
-ul, li{
-    padding-right: 20px;
-}
 ul li a{
     color: white;
 }
 ul li a:hover{
+    font-weight: bold;
     color: #3969FF;
+}
+.nav-item{
+    padding-right: 20px;
 }
 .workingPeople{
     margin: 0px;
     padding: 0px;
-    border-radius: 10px;
+
     width: 100%;
 }
 #brandLogo{
@@ -34,68 +34,50 @@ ul li a:hover{
     height: 100px;
     top: 5px;
 }
-
 #contQuienesSomos{
-    padding-top: 10%;
+    margin-top: 12%;
     padding-right: 0px;
     padding-left: 0px;
 }
-#divQuienesSomos{
-    margin-top: 4%;
+#contQuienesSomos .row{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#divQuienesSomos{
     background-color: #383838;
 }
-.row{
-    border-radius: 5px;
-}
-/* CARDS */
-.card-img-top{
-    width: 200px;
-    height: 120px;
-}
-.card-text{
-    font-size: 18px;
-    color: white;
-    text-align: center;
-}
-
-
 /* ACERCA DE NOSOTROS */
 .acercaNosotros{
-    margin-top: 5%;
+    margin-top: 12%;
 }
 .jumbotron-fluid{
     border-radius: 5px;
     margin: auto;
 }
 /* EMPLEADOS */
-.empleados{
-    margin-top: 10%;
+.contEmpleados{
+    width: 100%;
+    margin: 12% 0 0 0;
     background-color: #FFBD41;
 }
-.cardEmpleados{
-    width: 15%;
+.contEmpleados .card{
     background-color: #FFBD41;
 }
-.empleados .card{
-    background-color: #FFBD41;
-    margin: auto;
-    width: 20%;
-    border-radius: 20px;
-    margin-bottom: 5%;
-}
-.empleados .card-img-top{
-    width: 150px;
-    padding-left: 26.5%;
-    padding-top: 20px;
-}
+.contEmpleados .card-img-top{
+    padding-top: 10%;
 
+}
+.contEmpleados .card-body{
+    padding: 5% 0 5% 0;
+}
+.contEmpleados .card-text{
+    font-weight: bold;
+    text-align: center;
+}
 /* DIV CONTACTO */
 #divContacto{
     background-image: url(img/comienza.jpg);
     margin-top: 10%;
     background-size: cover;
-    margin-bottom: 10%;
 }
 .primeraRow{
     padding-top: 10%;
@@ -117,7 +99,6 @@ ul li a:hover{
     bottom: 0;
     width: 100%;
     background-color: #383838;
-    padding-top: 8px;
     height: 40px;
 }
 /* PAGINA DE SERVICIOS */
@@ -179,7 +160,7 @@ ul li a:hover{
     height: 100%;
 }
 #contContacto{
-  margin-top: 6%;
+  margin-top: 8%;
 }
 .formularioP{
     color: white;
@@ -187,7 +168,6 @@ ul li a:hover{
     font-size: 1.3em;
 }
 .form-control{
-
     width: 70%;
 }
 textarea{
@@ -195,4 +175,47 @@ textarea{
 }
 .btnEnviar{
     width: 70%;
+}
+
+/* MEDIA QUERIES */
+
+/* Large devices (desktops 1366) */
+@media (min-width: 1200px) and (max-width: 1366px){
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px){
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px){
+
+    .contEmpleados .card-img-top{
+        margin-left: 25%;
+        width: 50%;
+    }
+    #contQuienesSomos .row{
+        margin: auto;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px){
+    #contQuienesSomos{
+        margin-top: 45%;
+    }
+    .contEmpleados .card-img-top{
+        margin-left: 25%;
+        width: 50%;
+    }
+    #contQuienesSomos .row{
+        margin: auto;
+    }
 }
