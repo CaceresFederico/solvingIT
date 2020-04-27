@@ -7,16 +7,12 @@ body{
 }
 p{
     font-size: 1em;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 0 12px;
 }
+
 /* HEADER */
 ul li a{
     color: white;
-}
-ul li a:hover{
-    font-weight: bold;
-    color: #3969FF;
 }
 .nav-item{
     padding-right: 20px;
@@ -24,7 +20,6 @@ ul li a:hover{
 .workingPeople{
     margin: 0px;
     padding: 0px;
-
     width: 100%;
 }
 #brandLogo{
@@ -34,6 +29,14 @@ ul li a:hover{
     height: 100px;
     top: 5px;
 }
+
+/* CARDS */
+.card-img-top{
+    width: 100px;
+    height: 100px;
+}
+
+/* ACERCA DE NOSOTROS */
 #contQuienesSomos{
     margin-top: 12%;
     padding-right: 0px;
@@ -45,7 +48,6 @@ ul li a:hover{
 #divQuienesSomos{
     background-color: #383838;
 }
-/* ACERCA DE NOSOTROS */
 .acercaNosotros{
     margin-top: 12%;
 }
@@ -53,26 +55,27 @@ ul li a:hover{
     border-radius: 5px;
     margin: auto;
 }
+
 /* EMPLEADOS */
 .contEmpleados{
-    width: 100%;
-    margin: 12% 0 0 0;
-    background-color: #FFBD41;
-}
-.contEmpleados .card{
-    background-color: #FFBD41;
+    margin: 12% 0;
 }
 .contEmpleados .card-img-top{
-    padding-top: 10%;
-
+    margin-left: 20%;
+    padding: 10% 0 ;
+    width: 60%;
+    height: 60%;
 }
 .contEmpleados .card-body{
-    padding: 5% 0 5% 0;
+    padding: 5% 0 ;
 }
 .contEmpleados .card-text{
     font-weight: bold;
     text-align: center;
+    padding: 0;
+    color: white;
 }
+
 /* DIV CONTACTO */
 #divContacto{
     background-image: url(img/comienza.jpg);
@@ -88,25 +91,14 @@ ul li a:hover{
 }
 .textoContacto{
     text-align: center;
-    width: 100%;
     font-size: 50px;
     font-weight: bold;
     color: white;
 }
-/* FOOTER */
-.footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: #383838;
-    height: 40px;
-}
+
 /* PAGINA DE SERVICIOS */
 #contServicios{
     margin-top: 15%;
-}
-#contServicios .list-group-item a:hover{
-    background-color: blue;
 }
 .imgServicios1{
     padding-top: 2%;
@@ -137,25 +129,42 @@ ul li a:hover{
     padding-left: 2%;
     float: left;
 }
-.cardServicios{
-    margin: auto;
-}
-#contServicios .card-text{
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-}
-/* TECNOLOGIAS */
+
+/* DIV TECNOLOGIAS */
 #contTecnologia{
     margin-top: 15%;
     margin-bottom: 15%;
 }
-/* CLIENTES */
+.cardTecnologias , .cardClientes{
+    margin: auto;
+    width: 100px;
+    height: 160px;
+    padding: 20% 0;
+}
+/* ION ICONS */
+ion-icon{
+    color: black;
+    size: 20px;
+}
+
+/* DIV CLIENTES */
 #contClientes{
     margin-top: 15%;
     margin-bottom: 15%;
 }
-/* CONTACTO */
+
+/* DIV COMENTARIOS */
+.imgFeedback{
+    float: left;
+    width: 15%;
+}
+.comentarios p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* PAGINA DE CONTACTO */
 .contactoImg{
     height: 100%;
 }
@@ -177,39 +186,120 @@ textarea{
     width: 70%;
 }
 
-/* MEDIA QUERIES */
-
-/* Large devices (desktops 1366) */
-@media (min-width: 1200px) and (max-width: 1366px){
-
+/* FOOTER */
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #383838;
+    height: 60px;
 }
 
+/* MEDIA QUERIES */
+/* Large devices (desktops 1366) */
+@media (min-width: 1200px) and (max-width: 1366px){
+/* CAROUSEL */
+#contTecnologia .carousel-inner , #contClientes .carousel-inner{
+    padding-bottom: 4%;
+}
+}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+/* CAROUSEL */
+#contTecnologia .carousel-inner{
+    padding-bottom: 3%;
+}
+/* DIV COMENTARIOS */
+.imgFeedback{
+    padding-right: 2%;
+    margin-top: 1%;
+    width: 18%;
+}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px){
-
+    /* NOSOTROS */
+#divQuienesSomos  p{
+    padding: 1% 0 3% 0;
+}
+/* CAROUSEL */
+    #contTecnologia .carousel-inner{
+        padding-bottom: 2%;
+}
+/* DIV COMENTARIOS */
+    .imgFeedback{
+        padding-right: 2%;
+        margin-top: 4%;
+        width: 20%;
+    }
+/* SERVICIOS */
+    .textoCentro1, .textoCentro2{
+        padding-top: 4%;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px){
+    #divQuienesSomos  p{
+        padding: 1% 0 3% 0;
+    }
 
+/* CAROUSEL */
+#contTecnologia .carousel-inner{
+    padding-bottom: 3%;
+}
+/* DIV COMENTARIOS */
+    .imgFeedback{
+        display: inline-block;
+        margin-left: 37%;
+        width: 25%;
+    }
+    .comentarios p{
+        display: inline-block;
+    }
+/* DIV EMPLEADOS */
     .contEmpleados .card-img-top{
         margin-left: 25%;
         width: 50%;
     }
     #contQuienesSomos .row{
         margin: auto;
+    }
+/* SERVICIOS */
+    #contServicios{
+        margin-top: 20%;
+    }
+    .textoCentro1, .textoCentro2{
+        padding-top: 4%;
+    }
+    .cardTecnologias .card-img-top{
+        padding-bottom: 10%;
+    }
+/* CLIENTES */
+    .cardClientes{
+        padding: 10% 0;
+    }
+/* FORMULARIO */
+    #contContacto{
+        width: 50%;
     }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px){
+/* NAVBAR */
+    .navbar-toggler {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    .nav-link{
+        padding: 15px 0;
+        text-align: center;
+    }
+/* NOSOTROS */
     #contQuienesSomos{
-        margin-top: 45%;
+        margin-top: 60%;
     }
     .contEmpleados .card-img-top{
         margin-left: 25%;
@@ -217,5 +307,25 @@ textarea{
     }
     #contQuienesSomos .row{
         margin: auto;
+    }
+/* SERVICIOS */
+    #contServicios{
+        margin-top: 60%;
+    }
+    .imgServicios1, .imgServicios2{
+        padding-top: 5%;
+    }
+/* DIV COMENTARIOS */
+    .imgFeedback{
+        display: inline-block;
+        margin-left: 37%;
+        width: 25%;
+    }
+    .comentarios p{
+        display: inline-block;
+    }
+/* CLIENTES */
+    #contClientes{
+        margin-top: 60%;
     }
 }

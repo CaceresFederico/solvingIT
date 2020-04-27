@@ -19,131 +19,173 @@
 
 <body>
     <header>
-        <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg bg-dark fixed-top">
-                <a href="index.html"><img src="img/logoRecortado.png" id="brandLogo" alt="Solving IT Brand"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Nosotros</a>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="img/logoRecortado.png" id="brandLogo"
+                    alt="Solving IT Brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="col-6 col-md-3lapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- SERVICIOS -->
+        <section>
+            <div class="container-fluid" id="contServicios">
+                <div class="text-center text-white pb-3 display-4">Nuestros servicios</div>
+                <div class="container">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-primary"><img src="img/services/cliente.svg"
+                                class="img-fluid imgServicios1" alt="Outsourcing icon">
+                            <p class="textoCentro1">Reclutamiento IT</p>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        <li class="list-group-item"><img src="img/services/caja.svg" class="img-fluid imgServicios2"
+                                alt="Outsourcing icon">
+                            <p class="textoCentro2">Desarrollo</p>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="clientes.html">Clientes</a>
+                        <li class="list-group-item bg-primary"><img src="img/services/movil.svg"
+                                class="img-fluid imgServicios1" alt="Outsourcing icon">
+                            <p class="textoCentro1">Soporte</p>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        <li class="list-group-item"><img src="img/services/ux.svg" class="img-fluid imgServicios2"
+                                alt="Outsourcing icon">
+                            <p class="textoCentro2">UX/UI</p>
+                        </li>
+                        <li class="list-group-item bg-primary"><img src="img/services/prueba.svg"
+                                class="img-fluid imgServicios1" alt="Outsourcing icon">
+                            <p class="textoCentro1">Testing QA</p>
+                        </li>
+                        <li class="list-group-item"><img src="img/services/ui.svg" class="img-fluid imgServicios2"
+                                alt="Outsourcing icon">
+                            <p class="textoCentro2">Servidores</p>
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
-    </header>
+            </div>
 
-    <!-- SERVICIOS -->
-    <section> 
-        <div class="container" id="contServicios">
-            <div class="text-center text-white pb-3 display-4">Nuestros servicios</div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item bg-dark"><img src="img/services/cliente.svg"
-                    class="img-fluid imgServicios1" alt="Outsourcing icon"><p class="textoCentro1">Reclutamiento IT</p></li>
-                <li class="list-group-item"><img src="img/services/caja.svg"
-                    class="img-fluid imgServicios2" alt="Outsourcing icon"><p class="textoCentro2">Desarrollo</p></li>
-                <li class="list-group-item bg-dark"><img src="img/services/movil.svg"
-                    class="img-fluid imgServicios1" alt="Outsourcing icon"><p class="textoCentro1">Soporte</p></li>
-                <li class="list-group-item"><img src="img/services/ux.svg"
-                    class="img-fluid imgServicios2" alt="Outsourcing icon"><p class="textoCentro2">UX/UI</p></li>
-                <li class="list-group-item bg-dark"><img src="img/services/prueba.svg"
-                    class="img-fluid imgServicios1" alt="Outsourcing icon"><p class="textoCentro1">Testing QA</p></li>
-                <li class="list-group-item"><img src="img/services/ui.svg"
-                    class="img-fluid imgServicios2" alt="Outsourcing icon"><p class="textoCentro2">Alojamiento y servidores</p></li>
-            </ul>
-        </div>
+            <!-- CAROUSEL TECNOLOGIAS -->
+            <div class="container-fluid" id="contTecnologia">
+                <div class="text-center text-white pb-3 display-4">Tecnologías con las que trabajamos</div>
+                <div class="container bg-light p-0">
+                    <div id="carouselTecnologias" class="carousel slide" data-ride="carousel">
 
-        <!-- CAROUSEL TECNOLOGIAS -->
-        <div class="container" id="contTecnologia">
-            <div class="text-center text-white pb-3 display-4">Tecnologías con las que trabajamos</div>
-            <div class="row bg-light">
-                <div class="col pt-5">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="cardServicios">
-                                            <img src="img/tecnologias/piton.svg" class="card-img-top mr-auto" alt="tecnologiaIcon">
-                                            <div class="card-body">
-                                                <p class="card-text">Python</p>
+                                <div class="container p-0">
+                                    <div class="row justify-content-between m-0">
+
+                                        <div class="col-6 col-md-3">
+                                            <div class="cardTecnologias">
+                                                <img src="img/tecnologias/piton.svg" class="card-img-top"
+                                                    alt="tecnologiaIcon">
                                             </div>
                                         </div>
 
-                                        <div class="cardServicios">
-                                            <img src="img/tecnologias/html5.svg" class="card-img-top" alt="tecnologiaIcon">
-                                            <div class="card-body">
-                                                <p class="card-text">Html5</p>
+                                        <div class="col-6 col-md-3">
+                                            <div class="cardTecnologias">
+                                                <img src="img/tecnologias/html5.svg" class="card-img-top"
+                                                    alt="tecnologiaIcon">
                                             </div>
                                         </div>
 
-                                        <div class="cardServicios">
-                                            <img src="img/tecnologias/js.svg" class="card-img-top" alt="tecnologiaIcon">
-                                            <div class="card-body">
-                                                <p class="card-text">JS</p>
+                                        <div class="col-6 col-md-3">
+                                            <div class="cardTecnologias">
+                                                <img src="img/tecnologias/css.svg" class="card-img-top"
+                                                    alt="tecnologiaIcon">
                                             </div>
                                         </div>
+
+                                        <div class="col-6 col-md-3">
+                                            <div class="cardTecnologias">
+                                                <img src="img/tecnologias/js.svg" class="card-img-top"
+                                                    alt="tecnologiaIcon">
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
                             <div class="carousel-item">
-                                <div class="container-fluid">
-                                    <div class="row">
+                                <div class="container-fluid p-0">
+                                    <div class="row justify-content-between m-0">
 
-                                        <div class="cardServicios">
-                                            <img src="img/tecnologias/git.svg" class="card-img-top" alt="tecnologiaIcon">
-                                            <div class="card-body">
-                                                <p class="card-text">Git</p>
+                                        <div class="col-6 col-md-3">
+                                            <div class="cardTecnologias">
+                                                <img src="img/tecnologias/git.svg" class="card-img-top"
+                                                    alt="tecnologiaIcon">
                                             </div>
                                         </div>
 
-                                        <div class="cardServicios">
-                                            <img src="img/tecnologias/reaccionar.svg" class="card-img-top" alt="tecnologiaIcon">
-                                            <div class="card-body">
-                                                <p class="card-text">React</p>
+                                        <div class="col-6 col-md-3">
+                                            <div class="cardTecnologias">
+                                                <img src="img/tecnologias/reaccionar.svg" class="card-img-top"
+                                                    alt="tecnologiaIcon">
                                             </div>
                                         </div>
 
-                                        <div class="cardServicios">
-                                            <img src="img/tecnologias/java.svg" class="card-img-top" alt="tecnologiaIcon">
-                                            <div class="card-body">
-                                                <p class="card-text">Java</p>
+                                        <div class="col-6 col-md-3">
+                                            <div class="cardTecnologias">
+                                                <img src="img/tecnologias/java.svg" class="card-img-top"
+                                                    alt="tecnologiaIcon">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 col-md-3">
+                                            <div class="cardTecnologias">
+                                                <img src="img/tecnologias/csharp.svg" class="card-img-top"
+                                                    alt="tecnologiaIcon">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        
+                        <a class="carousel-control-prev" href="#carouselTecnologias" role="button" data-slide="prev">
+                            <ion-icon name="chevron-back-outline" size="large"></ion-icon>
+                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <a class="carousel-control-next" href="#carouselTecnologias" role="button" data-slide="next">
+                            <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
                         </a>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center pt-4">
+                <small class="text-white">Derechos Reservados 2020 SolvingIT diseñado por Cáceres
+                    Federico</small>
+            </div>
         </div>
-    </section>
-
-    <footer class="footer bg-dark text-center text-white"><small>Derechos Reservados 2020 SolvingIT diseñado por Cáceres
-            Federico</small></footer>
-
+    </footer>
+    <!-- IONICONS -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
