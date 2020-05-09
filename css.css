@@ -9,10 +9,16 @@ p{
     font-size: 1em;
     padding: 0 12px;
 }
-
+hr{
+    width: 60%;
+    background-color: white;
+}
 /* HEADER */
 ul li a{
     color: white;
+}
+ul li a:hover{
+    font-weight: bold;
 }
 .nav-item{
     padding-right: 20px;
@@ -29,13 +35,11 @@ ul li a{
     height: 100px;
     top: 5px;
 }
-
 /* CARDS */
 .card-img-top{
     width: 100px;
     height: 100px;
 }
-
 /* ACERCA DE NOSOTROS */
 #contQuienesSomos{
     margin-top: 12%;
@@ -45,17 +49,14 @@ ul li a{
 #contQuienesSomos .row{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#divQuienesSomos{
-    background-color: #383838;
-}
 .acercaNosotros{
     margin-top: 12%;
+    font-size: 1.1em;
 }
 .jumbotron-fluid{
     border-radius: 5px;
     margin: auto;
 }
-
 /* EMPLEADOS */
 .contEmpleados{
     margin: 12% 0;
@@ -75,11 +76,9 @@ ul li a{
     padding: 0;
     color: white;
 }
-
 /* DIV CONTACTO */
 #divContacto{
     background-image: url(img/comienza.jpg);
-    margin-top: 10%;
     background-size: cover;
 }
 .primeraRow{
@@ -95,7 +94,6 @@ ul li a{
     font-weight: bold;
     color: white;
 }
-
 /* PAGINA DE SERVICIOS */
 #contServicios{
     margin-top: 15%;
@@ -129,7 +127,6 @@ ul li a{
     padding-left: 2%;
     float: left;
 }
-
 /* DIV TECNOLOGIAS */
 #contTecnologia{
     margin-top: 15%;
@@ -146,14 +143,15 @@ ion-icon{
     color: black;
     size: 20px;
 }
-
 /* DIV CLIENTES */
 #contClientes{
     margin-top: 15%;
     margin-bottom: 15%;
 }
-
 /* DIV COMENTARIOS */
+.comentarios{
+    margin-bottom: 20%;
+}
 .imgFeedback{
     float: left;
     width: 15%;
@@ -163,29 +161,63 @@ ion-icon{
     font-weight: bold;
     font-size: 1.2em;
 }
-
 /* PAGINA DE CONTACTO */
+.container__contacto{
+    margin: 10% 0;
+}
 .contactoImg{
     height: 100%;
 }
-#contContacto{
-  margin-top: 8%;
-}
-.formularioP{
-    color: white;
-    font-weight: bold;
-    font-size: 1.3em;
-}
+
 .form-control{
-    width: 70%;
+    width: 90%;
 }
 textarea{
-    width: 70%;
+    width: 90%;
 }
 .btnEnviar{
-    width: 70%;
+    width: 90%;
 }
-
+/* PAGINA FORMULARIO */
+.container__contacto{
+    margin-top: 15%;
+}
+.formulario__p{
+    width: 250px;
+    margin:  3% 0 0 10%;
+    color: white;
+}
+.formulario__textArea{
+    color: white;   
+    margin-left: 6%;
+}
+input{
+    margin-left: 5%;
+}
+textarea{
+    margin-left: 5%;
+}
+.btnEnviar{
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+/* MAP */
+.container__map{
+    position: relative;
+    padding-bottom: 75%; 
+    height: 0;
+    overflow: hidden;
+    
+}
+.container__map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 /* FOOTER */
 footer{
     position: relative;
@@ -195,18 +227,48 @@ footer{
     height: 60px;
 }
 
-/* MEDIA QUERIES */
+
+/* ----------------------------------------------- MEDIA QUERIES -----------------------------------------------*/
 /* Large devices (desktops 1366) */
 @media (min-width: 1200px) and (max-width: 1366px){
+/* NOSOTROS */
+#divQuienesSomos .h2{
+    padding: 6% 0;
+}
+#divQuienesSomos p{
+    font-size: 1.1em;
+}
 /* CAROUSEL */
 #contTecnologia .carousel-inner , #contClientes .carousel-inner{
     padding-bottom: 4%;
 }
+/* PAGINA CONTACTO */
+
+.formulario__textArea{
+    color: white;   
+    margin-left: 5%;
 }
+/* MAPA */
+.container__map{
+    padding-left: 3%;
+}
+}
+
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* NOSOTROS */
+#divQuienesSomos .h2{
+    padding: 3% 0;
+}
+#divQuienesSomos p{
+    font-size: 1em;
+}
 /* CAROUSEL */
 #contTecnologia .carousel-inner{
+    padding-bottom: 3%;
+}
+#contClientes .carousel-inner{
     padding-bottom: 3%;
 }
 /* DIV COMENTARIOS */
@@ -215,117 +277,157 @@ footer{
     margin-top: 1%;
     width: 18%;
 }
+iframe{
+    width: 450px;
+    height: 450px;
 }
+.container__map{
+    padding-left: 2%;
+}
+}
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px){
     /* NOSOTROS */
-#divQuienesSomos  p{
-    padding: 1% 0 3% 0;
+#divQuienesSomos .h2{
+    padding: 3% 0;
 }
-/* CAROUSEL */
-    #contTecnologia .carousel-inner{
-        padding-bottom: 2%;
+#divQuienesSomos p{
+    font-size: 1em;
+    padding: 1% 5% 5% 5%;
 }
 /* DIV COMENTARIOS */
-    .imgFeedback{
-        padding-right: 2%;
-        margin-top: 4%;
-        width: 20%;
-    }
-/* SERVICIOS */
-    .textoCentro1, .textoCentro2{
-        padding-top: 4%;
-    }
+.imgFeedback{
+    padding-right: 2%;
+    margin-top: 4%;
+    width: 20%;
 }
+/* SERVICIOS */
+.textoCentro1, .textoCentro2{
+    padding-top: 4%;
+}
+/* FORMULARIO */
+.container__map{
+    padding-left: 0%;
+}
+/* MAPA */
+iframe{
+    width: 400px;
+    height: 400px;
+}
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px){
-    #divQuienesSomos  p{
-        padding: 1% 0 3% 0;
-    }
-
-/* CAROUSEL */
-#contTecnologia .carousel-inner{
-    padding-bottom: 3%;
+/* NOSOTROS */
+#divQuienesSomos .h2{
+    padding: 3% 0;
+}
+#divQuienesSomos p{
+    font-size: 1em;
+    padding: 1% 5% 5% 5%;
 }
 /* DIV COMENTARIOS */
-    .imgFeedback{
-        display: inline-block;
-        margin-left: 37%;
-        width: 25%;
-    }
-    .comentarios p{
-        display: inline-block;
-    }
-/* DIV EMPLEADOS */
-    .contEmpleados .card-img-top{
-        margin-left: 25%;
-        width: 50%;
-    }
-    #contQuienesSomos .row{
-        margin: auto;
-    }
-/* SERVICIOS */
-    #contServicios{
-        margin-top: 20%;
-    }
-    .textoCentro1, .textoCentro2{
-        padding-top: 4%;
-    }
-    .cardTecnologias .card-img-top{
-        padding-bottom: 10%;
-    }
-/* CLIENTES */
-    .cardClientes{
-        padding: 10% 0;
-    }
-/* FORMULARIO */
-    #contContacto{
-        width: 50%;
-    }
+.imgFeedback{
+    display: inline-block;
+    margin-left: 37%;
+    width: 25%;
 }
+.comentarios p{
+    display: inline-block;
+}
+/* DIV EMPLEADOS */
+.contEmpleados .card-img-top{
+    margin-left: 25%;
+    width: 50%;
+}
+#contQuienesSomos .row{
+    margin: auto;
+}
+/* SERVICIOS */
+#contServicios{
+    margin-top: 20%;
+}
+.textoCentro1, .textoCentro2{
+    padding-top: 4%;
+}
+.cardTecnologias .card-img-top{
+    padding-bottom: 10%;
+}
+/* CLIENTES */
+.cardClientes{
+    padding: 10% 0;
+}
+/* FORMULARIO */
+#contContacto{
+    margin: 10% 0;
+}
+/* MAPA */
+.container__map{
+    margin-bottom: 15%;
+}
+}
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px){
 /* NAVBAR */
-    .navbar-toggler {
-        margin-right: 20px;
-        margin-bottom: 10px;
-    }
-    .nav-link{
-        padding: 15px 0;
-        text-align: center;
-    }
+.navbar-toggler {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.nav-link{
+    padding: 15px 0;
+    text-align: center;
+}
 /* NOSOTROS */
-    #contQuienesSomos{
-        margin-top: 60%;
-    }
-    .contEmpleados .card-img-top{
-        margin-left: 25%;
-        width: 50%;
-    }
-    #contQuienesSomos .row{
-        margin: auto;
-    }
+#contQuienesSomos{
+    margin-top: 60%;
+}
+#divQuienesSomos .h2{
+    padding: 3% 0;
+}
+#divQuienesSomos p{
+    font-size: 1em;
+    padding: 1% 5% 5% 5%;
+}
+.contEmpleados .card-img-top{
+    margin-left: 25%;
+    width: 50%;
+}
+#contQuienesSomos .row{
+    margin: auto;
+}
 /* SERVICIOS */
-    #contServicios{
-        margin-top: 60%;
-    }
-    .imgServicios1, .imgServicios2{
-        padding-top: 5%;
-    }
+#contServicios{
+    margin-top: 60%;
+}
+.imgServicios1, .imgServicios2{
+    padding-top: 5%;
+}
 /* DIV COMENTARIOS */
-    .imgFeedback{
-        display: inline-block;
-        margin-left: 37%;
-        width: 25%;
-    }
-    .comentarios p{
-        display: inline-block;
-    }
+.imgFeedback{
+    display: inline-block;
+    margin-left: 37%;
+    width: 25%;
+}
+.comentarios p{
+    display: inline-block;
+}
 /* CLIENTES */
-    #contClientes{
-        margin-top: 60%;
-    }
+#contClientes{
+    margin-top: 60%;
+}
+/* FORMULARIO */
+.container__contacto{
+    margin-top: 60%;
+}
+#contContacto{
+    margin:10% 0;
+}
+.container__map{
+    margin-bottom: 15%;
+}
 }

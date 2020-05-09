@@ -46,45 +46,47 @@
     </header>
 
     <section>
-        <div class="container-fluid p-0">
-            <div class="row m-0">
-                <div class="col-6 p-0">
-                    <img src="img/carousel/workingPeople5.jpg" class="img-fluid contactoImg d-block"
-                        alt="working people">
+        <div class="container-fluid p-0 container__contacto">
+            <div class="row align-items-center m-0 bg-dark">
+                <div class="col-12 col-md-6 p-0 justify-content-center p-4" id="contContacto">
+                    <form>
+                        <div class="form-group">
+                            <label for="nombreApellido">
+                                <p class="formulario__p">Nombre y apellido</p>
+                            </label>
+                            <input type="text" class="form-control" id="nombreApellido">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">
+                                <p class="formulario__p">Empresa</p>
+                            </label>
+                            <input type="text" class="form-control" id="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">
+                                <p class="formulario__p">Teléfono</p>
+                            </label>
+                            <input type="number" class="form-control" id="empresa">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">
+                                <p class="formulario__p">Correo electrónico</p>
+                            </label>
+                            <input type="email" class="form-control" id="correo">
+                        </div>
+                        <div class="form-group">
+                            <p class="formulario__textArea pl-1">¿Cómo te podemos ayudar?</p>
+                            <textarea name="comentario" cols="40" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btnEnviar btn-primary">Enviar</button>
+                    </form>
                 </div>
-                <div class="col-6 pl-5" id="contContacto">
-                    <div class="container pl-5">
-                        <form class="pl-5">
-                            <div class="form-group">
-                                <label for="nombreApellido">
-                                    <p class="formularioP">Nombre y apellido</p>
-                                </label>
-                                <input type="text" class="form-control" id="nombreApellido">
-                            </div>
-                            <div class="form-group">
-                                <label for="telefono">
-                                    <p class="formularioP">Empresa</p>
-                                </label>
-                                <input type="text" class="form-control" id="telefono">
-                            </div>
-                            <div class="form-group">
-                                <label for="empresa">
-                                    <p class="formularioP">Teléfono</p>
-                                </label>
-                                <input type="number" class="form-control" id="empresa">
-                            </div>
-                            <div class="form-group">
-                                <label for="correo">
-                                    <p class="formularioP">Correo electrónico</p>
-                                </label>
-                                <input type="email" class="form-control" id="correo">
-                            </div>
-                            <div class="form-group">
-                                <p class="formularioP">¿Cómo te podemos ayudar?</p>
-                                <textarea name="comentario" id="contactoComentario" cols="40" rows="5"></textarea>
-                            </div>
-                            <button type="submit" class="btn btnEnviar btn-primary">Enviar</button>
-                        </form>
+                <div class="col-12 col-md-6 p-0 justify-content-center ">
+                    <div class="container__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1335.3759616079385!2d-58.499757563710325!3d-34.65924942409679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x95bcc905a8d59437%3A0xc7d746e58dc7a62!2sMurguiondo%202105%2C%20C1440CNU%20CABA!3m2!1d-34.658462799999995!2d-58.4995748!5e1!3m2!1ses!2sar!4v1588203158103!5m2!1ses!2sar"
+                            width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
